@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Delicious Recipes</title>
+   <style>
+    body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+  background-color: #e6c5a7;
+  color: #0c0c0c;
+  padding: 20px 0;
+  text-align: center;
+  width:100%;
+  padding: 5px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #080808;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+.hero.contact-hero {
+    background: url('https://source.unsplash.com/1600x1000/?dark,nature') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+    text-align: center;
+}
+
+.contact-us {
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    color:black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.btn2 {
+    padding: 20px 20px;
+    margin: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color:black;
+}
+
+footer {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+.btn1{
+  position: absolute;
+  right:15px;
+  padding: 10px 20px;
+    margin: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  
+}
+.div1{
+  width: 100% !important;
+}
+.nav-1{
+  top:0px;
+  position:-webkit-sticky;
+ position: sticky;
+}
+.flex
+{
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+   </style>
+</head>
+<body>
+    <div class="div1">
+        <header>
+          <div class="flex">
+          <h1>Delicious Recipes</h1>
+            <nav class="nav-1">
+            <ul>
+                <li><a href="cakes.html">Home</a></li>
+                <li><a href="cakes.html #recipe1" >Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <button class="btn1">Contact</button>
+        </div>
+      </header>
+      </div>
+
+    <section class="hero contact-hero">
+        <div class="hero-text">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Whether you have a question about our recipes, feedback, or just want to say hello, drop us a message.</p>
+        </div>
+    </section>
+
+    <section class="contact-us">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to fill out the form below, or reach us through our social media channels. We're always here to help and chat about all things food!</p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button class="btn2" type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 Delicious Recipes. All Rights Reserved.</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

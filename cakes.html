@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Recipe Website</title>
+    <style>
+      *{
+       box-sizing: border-box;
+      }
+body {
+  font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+    color: #333;
+}
+header {
+  background-color: #e6c5a7;
+  color: #0c0c0c;
+  padding: 20px 0;
+  text-align: center;
+  width:100%;
+  padding: 5px;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+header nav ul li a {
+  color: #080808;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+.main {
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLY59AckLKq7-3PMq_tZeusPt0caV8-eEX-A&s') no-repeat center center/cover ;
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.main h2 {
+  margin-bottom: 10px;
+}
+#recipe-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+}
+.recipe {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33% - 20px);
+  text-align: center;
+}
+.recipe img {
+  width: 100%;
+  border-radius: 10px;
+}
+.recipe h3 {
+  margin: 15px 0;
+}
+.recipe p {
+  margin-bottom: 15px;
+}
+.recipe a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+.recipe a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+@media (max-width: 768px) {
+  .recipe-list {
+      flex-direction: column;
+  }
+
+  .recipe {
+      flex: 1 1 100%;
+  }
+}
+.flex
+{
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+}
+.div1{
+  width: 100% !important;
+}
+.nav-1{
+  top:0px;
+  position:-webkit-sticky;
+ position: sticky;
+}
+.btn1{
+    position: absolute;
+  right:15px;
+  padding: 10px 20px;
+    margin: 30px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  
+}
+#recipe1{
+  background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDODJGWI5rcm3v7cExTfQK695Y9_b0JPj9g&s') no-repeat center center/cover ;
+  height: 300px;
+  padding: 50px;
+}
+#recipe1 a{
+  text-decoration: none;
+  color: black;
+}
+.div-1{
+  font-variant: small-caps;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+    </style>
+</head>
+<body>
+<div class="div1">
+  <header>
+    <div class="flex">
+    <h1 class="div-1">Delicious Recipes</h1>
+      <nav class="nav-1">
+      <ul>
+          <li><a href="cakes.html">Home</a></li>
+          <li><a href="#recipe1" >Recipes</a></li>
+          <li><a href="about.html">About</a></li>
+      </ul>
+  </nav>
+  <button class="btn1" onclick="document.location='contact.html'">Contact</button>
+  </div>
+</header>
+</div>
+    
+    <main>
+        <section class="main">
+            <h2>Find the Perfect Recipe for Any Occasion</h2>
+            <p>Explore our collection of delicious recipes that are perfect for any meal, season, or occasion.</p>
+        </section>
+
+        <section id="recipe-list">
+            <article class="recipe">
+                <img src="https://source.unsplash.com/1600x1000/?chocolatecake">
+                <h3>Chocolate Cake</h3>
+                <p>A rich and moist chocolate cake that's perfect for any celebration.</p>
+                <a href="chocolate.html">View Recipe</a>
+            </article>
+
+            <article class="recipe">
+                <img src="https://source.unsplash.com/1600x1000/?redvelvet">
+                <h3>Red Velvet Cake</h3>
+                <p>A Red Velvet Cake make the heart young again and wipes out the years</p>
+                <a href="redvelvet.html">View Recipe</a>
+            </article>
+
+            <article class="recipe">
+                <img src="https://source.unsplash.com/1600x1000/?cheesecake">
+                <h3>Cheesecake</h3>
+                <p>A smooth and creamy cheesecake with a graham cracker crust.</p>
+                <a href="cheese.html">View Recipe</a>
+            </article>
+
+            <article class="recipe">
+              <h3>Recipes</h3>
+              <div id="recipe1">
+              <nav>
+              <ul type="none">
+                <li><a href="chocolate.html">Chocolate Cake</a></li><br><br>
+                <li><a href="redvelvet.html" >Red Velvet Cake</a></li><br><br>
+                <li><a href="cheese.html">Cheese Cake</a></li>
+            </ul>
+          </nav>
+        </div>
+          </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Delicious Recipes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
